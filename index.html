@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "Description" content = "MyDescription">
+        <meta name = "Author" content = "Id, Phonenumber">
+        <meta name = "Keywords" content ="HTML, CSS, BOOTSTRAP, JAVASCRIPT TUTORIALS">
+        <meta name = "Viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+        <style>
+            .header1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins';
+            }
+            .header-div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                font-family: 'Poppins';
+            }
+        </style>
+        <title>Page</title>
+    </head>
+    <body>
+        <div class = "header-div1">
+            <h2 class = "header1">LEETCODE QUESTIONS</h2>
+        </div>
+        <div class = "header-div">
+            1.Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.<br>
+Example 1:<br>
+
+Input: nums = [2,7,11,15], target = 9<br>
+Output: [0,1]<br>
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].<br>
+
+Example 2:<br>
+
+Input: nums = [3,2,4], target = 6<br>
+Output: [1,2]<br>
+
+Example 3:<br>
+
+Input: nums = [3,3], target = 6<br>
+Output: [0,1]
+
+        </div>
+        <hr>
+        <div class = "header-div">
+            2.You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.<br>
+Example 1:<br>
+Input: l1 = [2,4,3], l2 = [5,6,4]<br>
+Output: [7,0,8]<br>
+Explanation: 342 + 465 = 807.<br>
+
+Example 2:<br>
+
+Input: l1 = [0], l2 = [0]<br>
+Output: [0]<br>
+
+Example 3:<br>
+
+Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]<br>
+Output: [8,9,9,9,0,0,0,1]<br>
+
+ 
+        </div>
+        <hr>
+        <div class = "header-div">
+            3.Given a string s, find the length of the longest
+            substring
+            without repeating characters.<br>
+            
+             
+            
+            Example 1:<br>
+            
+            Input: s = "abcabcbb"<br>
+            Output: 3<br>
+            Explanation: The answer is "abc", with the length of 3.<br>
+            
+            Example 2:<br>
+            
+            Input: s = "bbbbb"<br>
+            Output: 1<br>
+            Explanation: The answer is "b", with the length of 1.<br>
+            
+            Example 3:<br>
+            
+            Input: s = "pwwkew"<br>
+            Output: 3<br>
+            Explanation: The answer is "wke", with the length of 3.<br>
+            Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+            
+             
+        </div>
+        <hr>
+        <div class = "header-div">
+            4.Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+
+The overall run time complexity should be O(log (m+n)).<br>
+
+ 
+
+Example 1:<br>
+
+Input: nums1 = [1,3], nums2 = [2]<br>
+Output: 2.00000<br>
+Explanation: merged array = [1,2,3] and median is 2.<br>
+
+Example 2:<br>
+
+Input: nums1 = [1,2], nums2 = [3,4]<br>
+Output: 2.50000<br>
+Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+
+ 
+        </div>
+        <hr>
+        <div class = "header-div">
+            5.Given a string s, return the longest
+            palindromic
+            substring
+            in s.<br>
+            
+             
+            
+            Example 1:<br>
+            
+            Input: s = "babad"<br>
+            Output: "bab"<br>
+            Explanation: "aba" is also a valid answer.<br>
+            
+            Example 2:<br>
+            
+            Input: s = "cbbd"<br>
+            Output: "bb"<br>
+            
+             
+        </div>
+        <hr>
+        <div class = "header-div">
+            6.The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+
+P   A   H   N
+A P L S I I G
+Y   I   R
+
+And then read line by line: "PAHNAPLSIIGYIR"
+
+Write the code that will take a string and make this conversion given a number of rows:
+
+string convert(string s, int numRows);<br>
+
+ 
+
+Example 1:<br>
+
+Input: s = "PAYPALISHIRING", numRows = 3<br>
+Output: "PAHNAPLSIIGYIR"<br>
+
+Example 2:<br>
+
+Input: s = "PAYPALISHIRING", numRows = 4<br>
+Output: "PINALSIGYAHRPI"<br>
+Explanation:<br>
+P     I    N<br>
+A   L S  I G<br>
+Y A   H R<br>
+P     I<br>
+
+Example 3:<br>
+
+Input: s = "A", numRows = 1<br>
+Output: "A"
+
+ 
+        </div>
+        <hr>
+        <div class = "header-div">
+            7.Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).<br>
+
+ 
+
+Example 1:<br>
+
+Input: x = 123<br>
+Output: 321<br>
+
+Example 2:<br>
+
+Input: x = -123<br>
+Output: -321<br>
+
+Example 3:<br>
+
+Input: x = 120<br>
+Output: 21
+
+ 
+        </div>
+        <hr>
+        <div class = "header-div">
+            8.Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
+
+The algorithm for myAtoi(string s) is as follows:<br>
+
+    Read in and ignore any leading whitespace.
+    Check if the next character (if not already at the end of the string) is '-' or '+'. Read this character in if it is either. This determines if the final result is negative or positive respectively. Assume the result is positive if neither is present.
+    Read in next the characters until the next non-digit character or the end of the input is reached. The rest of the string is ignored.
+    Convert these digits into an integer (i.e. "123" -> 123, "0032" -> 32). If no digits were read, then the integer is 0. Change the sign as necessary (from step 2).
+    If the integer is out of the 32-bit signed integer range [-231, 231 - 1], then clamp the integer so that it remains in the range. Specifically, integers less than -231 should be clamped to -231, and integers greater than 231 - 1 should be clamped to 231 - 1.
+    Return the integer as the final result.<br>
+
+Note:<br>
+
+    Only the space character ' ' is considered a whitespace character.
+    Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.<br>
+
+ 
+
+Example 1:<br>
+
+Input: s = "42"<br>
+Output: 42<br>
+Explanation: The underlined characters are what is read in, the caret is the current reader position.<br>
+Step 1: "42" (no characters read because there is no leading whitespace)<br>
+         ^<br>
+Step 2: "42" (no characters read because there is neither a '-' nor '+')<br>
+         ^<br>
+Step 3: "42" ("42" is read in)<br>
+           ^<br>
+The parsed integer is 42.<br>
+Since 42 is in the range [-231, 231 - 1], the final result is 42.<br>
+
+Example 2:<br>
+
+Input: s = "   -42"<br>
+Output: -42<br>
+Explanation:<br>
+Step 1: "   -42" (leading whitespace is read and ignored)<br>
+            ^<br>
+Step 2: "   -42" ('-' is read, so the result should be negative)<br>
+             ^<br>
+Step 3: "   -42" ("42" is read in)<br>
+               ^<br>
+The parsed integer is -42.<br>
+Since -42 is in the range [-231, 231 - 1], the final result is -42.<br>
+
+Example 3:<br>
+
+Input: s = "4193 with words"<br>
+Output: 4193<br>
+Explanation:<br>
+Step 1: "4193 with words" (no characters read because there is no leading whitespace)<br>
+         ^<br>
+Step 2: "4193 with words" (no characters read because there is neither a '-' nor '+')<br>
+         ^<br>
+Step 3: "4193 with words" ("4193" is read in; reading stops because the next character is a non-digit)<br>
+             ^<br>
+The parsed integer is 4193.<br>
+Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
+
+        </div>
+        <hr>
+        <div class = "header-div">
+            9.Given an integer x, return true if x is a
+            palindrome
+            , and false otherwise.<br>
+            
+             
+            
+            Example 1:<br>
+            
+            Input: x = 121<br>
+            Output: true<br>
+            Explanation: 121 reads as 121 from left to right and from right to left.<br>
+            
+            Example 2:<br>
+            
+            Input: x = -121<br>
+            Output: false<br>
+            Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.<br>
+            
+            Example 3:<br>
+            
+            Input: x = 10<br>
+            Output: false<br>
+            Explanation: Reads 01 from right to left. Therefore it is not a palindrome.<br>
+            
+             
+        </div>
+        <hr>
+        <div class = "header-div">
+            10.Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:<br>
+
+            '.' Matches any single character.<br>
+            '*' Matches zero or more of the preceding element.<br>
+        
+        The matching should cover the entire input string (not partial).<br>
+        
+         
+        
+        Example 1:<br>
+        
+        Input: s = "aa", p = "a"<br>
+        Output: false<br>
+        Explanation: "a" does not match the entire string "aa".<br>
+        
+        Example 2:<br>
+        
+        Input: s = "aa", p = "a*"<br>
+        Output: true<br>
+        Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".<br>
+        
+        Example 3:<br>
+        
+        Input: s = "ab", p = ".*"<br>
+        Output: true<br>
+        Explanation: ".*" means "zero or more (*) of any character (.)".
+        
+         
+        </div>
+        <hr>
+        <div class = "header-div">
+            11.You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+            Find two lines that together with the x-axis form a container, such that the container contains the most water.
+            
+            Return the maximum amount of water a container can store.
+            
+            Notice that you may not slant the container.<br>
+            
+             
+            
+            Example 1:<br>
+            Input: height = [1,8,6,2,5,4,8,3,7]<br>
+Output: 49<br>
+Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.<br>
+
+Example 2:<br>
+
+Input: height = [1,1]<br>
+Output: 1
+
+        </div>
+        <hr>
+        <div class = "header-div">
+            12.Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.<br>
+
+            Symbol       Value<br>
+            I             1<br>
+            V             5<br>
+            X             10<br>
+            L             50<br>
+            C             100<br>
+            D             500<br>
+            M             1000<br>
+            
+            For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.<br>
+            
+            Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:<br>
+            
+                I can be placed before V (5) and X (10) to make 4 and 9.<br> 
+                X can be placed before L (50) and C (100) to make 40 and 90.<br> 
+                C can be placed before D (500) and M (1000) to make 400 and 900.<br>
+            
+            Given an integer, convert it to a roman numeral.<br>
+            
+             
+            
+            Example 1:<br>
+            
+            Input: num = 3<br>
+            Output: "III"<br>
+            Explanation: 3 is represented as 3 ones.<br>
+            
+            Example 2:<br>
+            
+            Input: num = 58<br>
+            Output: "LVIII"<br>
+            Explanation: L = 50, V = 5, III = 3.<br>
+            
+            Example 3:<br>
+            
+            Input: num = 1994<br>
+            Output: "MCMXCIV"<br>
+            Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.     
+        </div>        
+        <hr>
+        <div class = "header-div">
+            13.Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.<br>
+
+            Symbol       Value<br>
+            I             1<br>
+            V             5<br>
+            X             10<br>
+            L             50<br>
+            C             100<br>
+            D             500<br>
+            M             1000<br>
+            
+            For example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.<br>
+            
+            Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:<br>
+            
+                I can be placed before V (5) and X (10) to make 4 and 9.<br> 
+                X can be placed before L (50) and C (100) to make 40 and 90.<br> 
+                C can be placed before D (500) and M (1000) to make 400 and 900.<br>
+            
+            Given a roman numeral, convert it to an integer.<br>
+            
+             
+            
+            Example 1:<br>
+            
+            Input: s = "III"<br>
+            Output: 3<br>
+            Explanation: III = 3.<br>
+            
+            Example 2:<br>
+            
+            Input: s = "LVIII"<br>
+            Output: 58<br>
+            Explanation: L = 50, V= 5, III = 3.<br>
+            
+            Example 3:<br>
+            
+            Input: s = "MCMXCIV"<br>
+            Output: 1994<br>
+            Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.<br>     
+        </div>
+        <hr>
+        <div class = "header-div">
+            15.Write a function to find the longest common prefix string amongst an array of strings.<br>
+
+            If there is no common prefix, return an empty string "".<br>
+            
+             
+            
+            Example 1:<br>
+            
+            Input: strs = ["flower","flow","flight"]<br>
+            Output: "fl"<br>
+            
+            Example 2:<br>
+            
+            Input: strs = ["dog","racecar","car"]<br>
+            Output: ""<br>
+            Explanation: There is no common prefix among the input strings. 
+        </div>
+        <hr>
+        <div class = "header-div">
+            15.Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.<br>
+
+            Notice that the solution set must not contain duplicate triplets.<br>
+            
+             
+            
+            Example 1:<br>
+            
+            Input: nums = [-1,0,1,2,-1,-4]<br>
+            Output: [[-1,-1,2],[-1,0,1]]<br>
+            Explanation:<br>
+            nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.<br>
+            nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.<br>
+            nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.<br>
+            The distinct triplets are [-1,0,1] and [-1,-1,2].<br>
+            Notice that the order of the output and the order of the triplets does not matter.<br>
+            
+            Example 2:<br>
+            
+            Input: nums = [0,1,1]<br>
+            Output: []<br>
+            Explanation: The only possible triplet does not sum up to 0.<br>
+            
+            Example 3:
+            <br>
+            
+            Input: nums = [0,0,0]
+            <br>
+            Output: [[0,0,0]]
+            <br>
+            Explanation: The only possible triplet sums up to 0.
+            
+             
+        </div>
+        <hr>
+    </body>
+</html>
